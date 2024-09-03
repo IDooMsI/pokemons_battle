@@ -72,8 +72,7 @@ export class PokemonsService {
 
     attackTurn(pokemonTurn, otherPokemon){
         pokemonTurn.attack <= otherPokemon.defense ? pokemonTurn.attack = 1 : pokemonTurn.attack = pokemonTurn.attack - otherPokemon.defense;
-        otherPokemon.weaknesses.includes(pokemonTurn.type) ? pokemonTurn.attack + 1 : pokemonTurn.attack;
-        otherPokemon.hp = otherPokemon.hp - pokemonTurn.attack;
+        otherPokemon.hp = otherPokemon.hp - otherPokemon.weaknesses.includes(pokemonTurn.type) ? pokemonTurn.attack + 1 : pokemonTurn.attack;
         otherPokemon.turn = true;
         pokemonTurn.turn = false;
     }

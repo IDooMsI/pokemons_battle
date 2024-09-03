@@ -30,14 +30,14 @@
 
 .pokemon-card {
   border: 1px solid #ddd;
-  border-radius: 8px; /* Bordes redondeados */
-  box-shadow: 4px 0 8px rgba(0, 0, 0, 0.2); /* Sombreado */
-  overflow: hidden; /* Asegura que el contenido no se desborde */
-  transition: 0.3s; /* Suaviza la transición del sombreado al pasar el ratón */
+  border-radius: 8px;
+  box-shadow: 4px 0 8px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  transition: 0.3s;
 }
 
 .pokemon-card:hover {
-  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3); /* Sombreado al pasar el ratón */
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3);
 }
 
 .card-content-list{
@@ -46,22 +46,22 @@
 
 .card-container-list {
   display: flex;
-  flex-wrap: nowrap; /* Mantén las tarjetas en una sola fila */
-  justify-content: space-between; /* Espacio uniforme entre tarjetas */
-  gap: 2%; /* Espacio entre las tarjetas */
-  align-items: stretch; /* Alinea las tarjetas para que tengan la misma altura */
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  gap: 2%;
+  align-items: stretch;
 }
 
 .card-container-list .MuiCard-root {
-  flex: 1; /* Hace que cada tarjeta ocupe el mismo espacio disponible */
-  min-width: 150px; /* Ancho mínimo para cada tarjeta (ajusta según sea necesario) */
+  flex: 1;
+  min-width: 150px;
 }
 
 .battle-camp-container{
   margin-top: 5%;
   display: flex;
   justify-content: space-around;
-  gap: 5%; /* Espacio entre las tarjetas */
+  gap: 5%;
 }
 
 .line-progress-bar-box-container{
@@ -69,48 +69,48 @@
 }
 
 .style-green-button {
-  color: white !important; /* Color del texto del botón */
-  border-radius: 8px; /* Bordes redondeados */
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Sombreado */
-  border: none; /* Sin borde por defecto */
-  padding: 10px 20px; /* Espaciado interno del botón */
-  cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
-  transition: box-shadow 0.3s ease-in-out; /* Suaviza la transición del sombreado */
+  color: white !important;
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: box-shadow 0.3s ease-in-out;
 }
 
 .color-button-active{
-  background-color: #4caf50 !important; /* Verde */
+  background-color: #4caf50 !important;
 }
 
 
 .green-button:hover {
-  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3); /* Sombreado al pasar el ratón */
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3);
 }
 
 .winner-announcement {
-  background-color: #e3f2fd; /* Un azul claro */
-  border: 1px solid #90caf9; /* Un borde azul más oscuro */
+  background-color: #e3f2fd;
+  border: 1px solid #90caf9;
   padding: 10px 20px;
   border-radius: 8px;
   text-align: center;
   margin: 20px 0;
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .winner-text {
-  color: #0d47a1; /* Color del texto azul */
+  color: #0d47a1;
   font-weight: bold;
 }
 
 .pokemon-container img {
   width: 100%;
-  transition: filter 0.3s ease; /* Para suavizar el cambio del filtro */
+  transition: filter 0.3s ease;
 }
 
 .pokemon-container img {
-  transition: filter 0.3s ease; /* Transición suave para el filtro */
+  transition: filter 0.3s ease;
 }
 
 .pokemon-container.loser img {
-  filter: grayscale(100%); /* Aplica el filtro gris al 100% */
+  filter: grayscale(100%);
 }
