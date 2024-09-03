@@ -1,0 +1,116 @@
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.pokemon-card {
+  border: 1px solid #ddd;
+  border-radius: 8px; /* Bordes redondeados */
+  box-shadow: 4px 0 8px rgba(0, 0, 0, 0.2); /* Sombreado */
+  overflow: hidden; /* Asegura que el contenido no se desborde */
+  transition: 0.3s; /* Suaviza la transición del sombreado al pasar el ratón */
+}
+
+.pokemon-card:hover {
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3); /* Sombreado al pasar el ratón */
+}
+
+.card-content-list{
+  padding-bottom: 10% !important;
+}
+
+.card-container-list {
+  display: flex;
+  flex-wrap: nowrap; /* Mantén las tarjetas en una sola fila */
+  justify-content: space-between; /* Espacio uniforme entre tarjetas */
+  gap: 2%; /* Espacio entre las tarjetas */
+  align-items: stretch; /* Alinea las tarjetas para que tengan la misma altura */
+}
+
+.card-container-list .MuiCard-root {
+  flex: 1; /* Hace que cada tarjeta ocupe el mismo espacio disponible */
+  min-width: 150px; /* Ancho mínimo para cada tarjeta (ajusta según sea necesario) */
+}
+
+.battle-camp-container{
+  margin-top: 5%;
+  display: flex;
+  justify-content: space-around;
+  gap: 5%; /* Espacio entre las tarjetas */
+}
+
+.line-progress-bar-box-container{
+  margin-top: 2%;
+}
+
+.style-green-button {
+  color: white !important; /* Color del texto del botón */
+  border-radius: 8px; /* Bordes redondeados */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Sombreado */
+  border: none; /* Sin borde por defecto */
+  padding: 10px 20px; /* Espaciado interno del botón */
+  cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+  transition: box-shadow 0.3s ease-in-out; /* Suaviza la transición del sombreado */
+}
+
+.color-button-active{
+  background-color: #4caf50 !important; /* Verde */
+}
+
+
+.green-button:hover {
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3); /* Sombreado al pasar el ratón */
+}
+
+.winner-announcement {
+  background-color: #e3f2fd; /* Un azul claro */
+  border: 1px solid #90caf9; /* Un borde azul más oscuro */
+  padding: 10px 20px;
+  border-radius: 8px;
+  text-align: center;
+  margin: 20px 0;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+}
+
+.winner-text {
+  color: #0d47a1; /* Color del texto azul */
+  font-weight: bold;
+}
+
+.pokemon-container img {
+  width: 100%;
+  transition: filter 0.3s ease; /* Para suavizar el cambio del filtro */
+}
+
+.pokemon-container img {
+  transition: filter 0.3s ease; /* Transición suave para el filtro */
+}
+
+.pokemon-container.loser img {
+  filter: grayscale(100%); /* Aplica el filtro gris al 100% */
+}
