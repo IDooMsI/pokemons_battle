@@ -36,6 +36,7 @@ export class PokemonsService {
         const pokemon1 = battle.selectedPokemon;
         const pokemon2 = battle.selectedOpponent;
         let rounds = 0;
+
         while (battleContinue){
             if (pokemon1.turn){
                 this.attackTurn(pokemon1, pokemon2);
@@ -71,8 +72,9 @@ export class PokemonsService {
     }
 
     attackTurn(pokemonTurn, otherPokemon){
-        pokemonTurn.attack <= otherPokemon.defense ? pokemonTurn.attack = 1 : pokemonTurn.attack = pokemonTurn.attack - otherPokemon.defense;
-        otherPokemon.hp = otherPokemon.hp - otherPokemon.weaknesses.includes(pokemonTurn.type) ? pokemonTurn.attack + 1 : pokemonTurn.attack;
+        let attack = 0;
+        pokemonTurn.attack <= otherPokemon.defense ? attack = 1 : attack = pokemonTurn.attack - otherPokemon.defense;
+        otherPokemon.hp = otherPokemon.hp - (otherPokemon.weaknesses.includes(pokemonTurn.type) ? attack + 1 : attack);
         otherPokemon.turn = true;
         pokemonTurn.turn = false;
     }

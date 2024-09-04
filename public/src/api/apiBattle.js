@@ -14,6 +14,8 @@ export const battleStart = (pokemonSelected, pokemonOpponent, setPokemonTurn, se
         selectedOpponent: pokemonRequestHelper(pokemonOpponent)
     })
     .then(response => {
+        console.log("aca hay algo?")
+
         setPokemonTurn(response.data);
         setFinish(true);
     })
